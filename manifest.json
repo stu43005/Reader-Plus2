@@ -1,0 +1,37 @@
+{
+    "manifest_version": 2,
+    "name": "Reader Plus2",
+    "version": "0.5.2",
+    "description": "加強 Google Reader",
+    "content_scripts": [
+        {
+            "js": [
+                "jquery-1.7.min.js",
+                "jquery.dependClass.js",
+                "jquery.slider.min.js",
+                "jquery.style.js",
+                "readerplus.js"
+            ],
+            "css": [
+                "jquery.slider.min.css"
+            ],
+            "matches": [
+                "http://*.google.com/reader/view/*",
+                "https://*.google.com/reader/view/*"
+            ]
+        }
+    ],
+    "permissions": [
+        "http://*.google.com/reader/view/*",
+        "https://*.google.com/reader/view/*"
+    ],
+    "web_accessible_resources": [
+        "gototopicon.png",
+        "gotobottomicon.png",
+        "img/jslider.blue.png",
+        "img/jslider.plastic.png",
+        "img/jslider.png",
+        "img/jslider.round.plastic.png",
+        "img/jslider.round.png"
+    ]
+}
